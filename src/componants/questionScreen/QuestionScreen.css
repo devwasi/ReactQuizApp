@@ -1,0 +1,29 @@
+.questionScreen,.resultScreen{
+    box-shadow: 0 0 10px #000;
+    padding: 10px;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+.optionsMain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+    /* flex-direction: column; */
+}
+.optionsBtn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid #a58e8e;
+    background-color: #be222238;
+}
+
+.quizApp{
+    text-align: center;
+    color: #be2222;
+    margin-bottom: 10px;
+}
+.questionCount{
+    margin: 10px auto;
+}
