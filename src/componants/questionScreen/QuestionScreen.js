@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './QuestionScreen.css';
+import Result from '../Result/Result';
 
 function QuestionScreen() {
 
@@ -89,21 +90,10 @@ nextQuestion()
   </div>
  </div>
  :
- <div className='resultScreen'>
-  <div>
-    <h1>
-      THANK YOU
-    </h1>
-  </div> <hr />
-  <div>
-  <h1>
-    Your Score: {score}
-  </h1>
-  <h1>
-    Percentage: {Math.round(score*100/questionData.length)}
-  </h1>
-  </div>
- </div>
+ <Result 
+ score={score}
+  questionLength={questionData.length}
+  />
   );
 }
 
